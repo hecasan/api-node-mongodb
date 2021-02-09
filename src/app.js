@@ -1,7 +1,13 @@
 'use strict'
 
+
 const express = require('express');
 const bodyParser = require('body-parser');
+
+const mongoose = require('mongoose');
+
+// Conecta com o banco de dados para
+mongoose.connect('String de conexão')
 
 const app = express();
 const router = express.Router();
